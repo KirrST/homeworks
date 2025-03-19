@@ -1,0 +1,63 @@
+ @import url(reset.css);
+
+*{
+    color: green;
+}
+h1, h2{
+    color: red;
+}
+nav.menu ol li a {
+    color: rgb(27, 25, 172);
+}
+.menu ol li ul a{
+    color: cadetblue;
+}
+
+.text00,
+.text01,
+.text02{
+    color: blue;
+}
+.text03,
+.text04,
+.text05{
+    color: rgb(171, 171, 8);
+}
+section.second_item>p{
+    color: chocolate;
+}
+ h3{
+    color: crimson;
+}
+
+.point01{
+color: brown;
+}
+
+.point01>ul li{
+    color: black;
+}
+h4~ol li{
+    color: rgba(48, 57, 50, 0.489);
+}
+#link5+p{
+    color: rgb(235, 2, 165);
+}
+
+.list05 h3{
+    color: cadetblue;
+}
+.list05 h3~ul li{
+    color: blue;
+}
+
+[title*="Перейти"]{
+    color: rgb(160, 106, 95);
+}
+
+footer *{
+    color: rgb(24, 151, 82);
+}
+[class*="dub"]{
+    color: rgb(194, 6, 19);
+}
