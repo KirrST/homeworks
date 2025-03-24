@@ -90,6 +90,15 @@ text-decoration: underline wavy red;
 
 }
 
+.lore{
+    text-align: center;
+    
+}
+
+section>div{
+    text-align: left;
+}
+
 [title*="посилання"] {
     color: rgb(6, 220, 156);
 }
