@@ -53,6 +53,8 @@ body{
 
 .s1_block1 {
     color: rgb(12, 70, 86);
+    text-align: justify;
+    line-height: 2;
 }
 
 .s1_block2 p {
