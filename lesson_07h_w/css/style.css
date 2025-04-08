@@ -1,0 +1,397 @@
+@import url(reset.css);
+
+.wrapper{
+    overflow: clip;
+    min-height: 100%; 
+    font-family:"Inter", sans-serif;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+
+.menu>ul{
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    color: rgb(17, 112, 112);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+a:focus-visible{
+        outline: dashed 2px red
+}
+header a:hover{
+    color: #412672;
+    text-decoration: underline solid 2px;
+}
+
+/* ===== PART 1 =====*/
+
+.business{
+    background-color: #412672;
+    line-height: 1.266;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 61px;
+    padding-bottom: 102px;
+}
+
+.container1{
+    text-align: left;
+    max-width: 1219px;
+    margin: 0 auto;
+}
+
+.title2{
+    color: var(--Style, #FFF);;
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.title2 span{
+    color: var(--Style, #FFF);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.container1 ul li{
+    display: inline-block;
+    background: #FFF;
+    vertical-align:top;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+    width: 387px;
+    min-height: 476px;
+    padding: 20px;
+    line-height: 1.26;
+}
+
+.container1 ul li:hover{
+    background: #FFBE48;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.container1 ul li:not(:last-child){
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container1 ul li :not(:last-child){
+    margin-bottom: 16px;
+}
+
+.img{
+    max-width: 347px;
+    max-height: 266px;
+}
+
+.img:hover{
+    box-shadow: 0 0 10px brown;
+}
+
+.name{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.name:hover{
+    text-decoration: underline solid 2px brown;
+    color: brown;
+    text-shadow:0 0 1px #000;
+}
+
+[class*="card"] p{
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 15px;
+}
+
+.more{
+    color: #FE3F3F;
+}
+
+.more:hover{
+    text-decoration: underline solid 1px#FE3F3F;
+    font-weight: bold;
+}
+
+/* ===== PART 2 ===== */
+.business_part2{
+    background: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 61px;
+    padding-bottom: 102px;
+}
+
+.container2{
+    text-align: left;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img2{
+    display: inline-block;
+    max-width:700px;
+    max-height: 521px;
+    vertical-align: middle;
+}
+
+.text_content{
+    display: inline-block;
+    text-align: left;
+    max-width: 518px;
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 90px;
+    color: var(--412672, #412672);
+}
+
+.text_content *:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.title3{
+    font-size: 34px;
+}
+
+.title3 span{
+    font-weight: 700;
+}
+
+.text_content p{
+    font-size: 22px;
+}
+
+.text_content ul li{
+    font-size: 20px;
+    color: var(--Gray-2, #4F4F4F);
+}
+.text_content ul li a:hover{
+    color: #FE3F3F;
+    text-decoration: underline solid 2px #FE3F3F;
+}
+
+.text_content ul li:not(:last-child){
+    margin-bottom: 21px;
+}
+
+.text_content ul li::before{
+    content:'';
+    background: url(../img/svg/frame.svg) 0 0 / 29px no-repeat;
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+/* =====SNAKE===== */
+
+.the-game {
+    padding: 40px;
+    background-color: #f0f0f0;
+    height: 2000px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    text-align: center;
+  }
+
+  .start,
+  .finish{
+    border: 1px solid #000;
+    padding: 30px;
+    font-size: 50px;
+    background-color: #20c211;
+  }
+
+  .finish{
+    margin-top: -10px;
+    visibility: hidden;
+  }
+
+  .block{
+    width: 100px;
+    height: 100px;
+    background: #d68310;
+    border: 1px solid #000;
+    margin-left: 50px;
+    margin-top: -10px;
+    visibility: hidden;
+  }
+
+  .block1{
+    height: 300px;
+    width: 40px;
+  }
+
+  .block2{
+    width: 300px;
+    height: 30px;
+  }
+
+  .block3{
+    margin-left: 325px;
+    width: 25px;
+  }
+
+  .block4{
+    margin-left: 325px;
+    width: 250px;
+    height: 25px;
+  }
+
+  .block5{
+    margin-left: 555px;
+    height: 80px;
+    width: 20px;
+  }
+
+  .block6{
+    width: 400px;
+    margin-left: 175px;
+    height: 30px;
+  }
+
+  .block7{
+    width: 30px;
+    height: 180px;
+    margin-left: 175px;
+  }
+
+  .block8{
+    margin-left: 175px;
+    width: 700px;
+    height: 25px;
+  }
+
+  .block9{
+    width: 20px;
+    margin-left: 855px;
+  }
+
+   .game:hover:has(.start:hover) .block1{
+    visibility: visible;
+  }
+
+  .block1:hover{
+    visibility: visible;
+  }
+
+  .game:hover:has(.block1:hover) .block2{
+    visibility: visible;
+  }
+
+  .block2:hover{
+    visibility: visible;
+  }
+
+  .the-game:hover:has(.block2:hover) .block3{
+    visibility: visible;
+  }
+
+  .block3:hover{
+    visibility: visible;
+  }
+
+  .the-game:hover:has(.block3:hover) .block4{
+    visibility: visible;
+  }
+
+  .block4:hover{
+    visibility: visible;
+  }
+
+  .the-game:hover:has(.block4:hover) .block5{
+    visibility: visible;
+  }
+
+  .block5:hover{
+    visibility: visible;
+  }
+
+  .the-game:hover:has(.block5:hover) .block6{
+    visibility: visible;
+  }
+
+  .block6:hover{
+    visibility: visible;
+  }
+
+  .the-game:hover:has(.block6:hover) .block7{
+    visibility: visible;
+  }
+
+  .block7:hover{
+    visibility: visible;
+  }
+
+  .the-game:hover:has(.block7:hover) .block8{
+    visibility: visible;
+  }
+
+  .block8:hover{
+    visibility: visible;
+  }
+
+  .the-game:hover:has(.block8:hover) .block9{
+    visibility: visible;
+  }
+
+  .block9:hover{
+    visibility: visible;
+  } 
+
+  .the-game:hover:has(.block9:hover) .finish{
+    visibility: visible;
+  }
+
+  .finish:hover{
+    visibility: visible;
+  }
+
+
+/* ===== FOOTER ===== */
+ 
+footer{
+  font-family:"Poppins", sans-serif;
+  border: 5px solid #000;
+  background-color: #120f20;
+  text-align: center;
+}
+
+.author{
+  font-size: 40px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.author>p{
+  text-shadow: 0 0 10px rgb(17, 194, 180);
+  margin-bottom: 20px;
+}
+
+.author>a{
+  background-color: rgb(16, 91, 91);
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 14px;
+  text-shadow: 2px 2px 7px black;
+  box-shadow: 0 0 15px green;
+}
+
+.quality_guarantor img {
+width: 175px;
+margin: 0 50px;
+}
