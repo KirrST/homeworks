@@ -1,0 +1,169 @@
+@import url(reset.css);
+
+body{
+  font-family: "Montserrat", sans-serif;
+  background: #40484b;
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+.wrapper{
+  min-height: 100%;
+  overflow: clip;
+}
+
+.container{
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+
+.content_container{
+  max-width: 1200px;
+  background-color: rgba(229, 227, 238, 0.285);
+  margin: 0 auto;
+}
+section{
+  padding-inline: 15px;
+  margin: 0 auto 100px;
+}
+
+/* ==== header ===== */
+
+.top_title{
+  background: white url(../img/svg/toptitle.svg) 90% / contain no-repeat;
+  border-right: 15px solid #000;
+  border-left: 15px solid #000;
+}
+
+.top_title h1{
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 40px;
+}
+
+h1 span{
+  font-weight: 500;
+  font-style: italic;
+  margin-left: 110px;
+}
+
+.top_title h1::after{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 70%;
+  background-color: red;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.top_title h1::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 70%;
+  background-color: red;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+/* ===== icon ===== */
+
+.icon{
+  padding: 30px;
+}
+
+.icon > *:not(:last-child){
+  margin-bottom: 50px;
+}
+
+
+
+.list  li img{
+  width: 60px;
+  height: 60px;
+}
+
+
+.list li:not(:last-child){
+  margin-bottom: 50px;
+}
+
+/* ==== background ===== */
+
+.block-1{
+  text-align: center;
+}
+
+.block-1 > *:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.block-1:not(:last-child){
+  margin-bottom: 50px;
+}
+
+.foto1{ 
+  border-radius: 40% 0 40% 0;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: 0 0 10px #2393d9;
+}
+
+/* ===== size ==== */
+.dif_size{
+  text-align: center;
+  padding-top: 40px;
+}
+
+.dif_size h2{
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(92, 5, 5);
+  font-weight: 700;
+}
+
+.dif_size > *:not(:last-child){
+  margin-bottom: 50px;
+}
+/* ==== footer ===== */
+
+footer{
+  padding-top: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+
+footer > *{
+  margin-bottom: 30px;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #000;
+  padding: 20px;
+  letter-spacing: 3px;
+}
+
+
+footer a{
+
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: #2393d9;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgb(6, 5, 5);
+  text-shadow: 0 0 4px black;
+}
+
+
+
