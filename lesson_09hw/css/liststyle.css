@@ -1,0 +1,14 @@
+@import url(reset.css);
+
+
+body{
+    text-align: center;
+}
+[class *="container"]{
+    padding-inline: 15px;
+    margin: 100px auto;
+}
+
+.list-items > *{
+    display: inline-block;
+}
