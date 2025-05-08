@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson #11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">Lesson #11 Transform</h1>
+            <ul class="header__menu menu-items">
+                <li class="menu-items__item"><a class="menu-items__link" href="#top">Parts</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu__item"><a class="sub-menu__link" href="#part1">Transform 2D</a></li>
+                        <li class="sub-menu__item"><a class="sub-menu__link" href="#part2">Transform 3D</a></li>
+                        <li class="sub-menu__item"><a class="sub-menu__link" href="#part3">Part 3</a></li>
+                        <li class="sub-menu__item"><a class="sub-menu__link" href="#car">Car</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-items__item"><a class="menu-items__link" href="#down">To down</a></li>
+                <li class="menu-items__item"><a class="menu-items__link" href="#">lorem</a></li>
+                <li class="menu-items__item"><a class="menu-items__link" href="#">lorem</a></li>
+            </ul>
+        </header>
+
+        <main class="page">
+            <section class="transform-2d" id="part1">
+                <div class="transform-2d__title title-section">
+                    <h2 class="title-section__title">
+                        <a class="title-section__link" href="#part1">Transform 2D</a>
+                    </h2>
+                </div>
+                <div class="transform-2d__block block-elements">
+                    <div class="block-elements__box example-block">
+                        <div class="example-block__box example-block__box--translate"></div>
+                    </div>
+                    <div class="block-elements__info info-contant">
+                        <h2 class="info-contant__title">Translate (x, y)</h2>
+                        <p class="info-contant__description">Зміщує елемент на нове місце,
+                            переміщаючи відносно початкового 
+                            положення об'єкта вправо та вниз,
+                            використовуючи координати X та Y. 
+                            Записується так translate (x,y).</p>
+                    </div>
+                </div>
+
+                <div class="transform-2d__block block-elements">
+                    <div class="block-elements__box example-block">
+                        <div class="example-block__box example-block__box--scale">>>>></div>
+                    </div>
+                    <div class="block-elements__info info-contant">
+                        <h2 class="info-contant__title">Scale (x, y)</h2>
+                        <p class="info-contant__description">
+                            Масштабує елементи,
+                            роблячи їх більшими або меншими.
+                            1 - це початковий розмір об'єкту</p>
+                    </div>
+                </div>
+
+                <div class="transform-2d__block block-elements">
+                    <div class="block-elements__box example-block">
+                        <div class="example-block__box example-block__box--rotate"></div>
+                    </div>
+                    <div class="block-elements__info info-contant">
+                        <h2 class="info-contant__title">Rotate (n + deg)</h2>
+                        <p class="info-contant__description">
+                            Повертає елементи
+                        </p>
+                        <p class="info-contant__description">
+                            По год. стрілці<br>
+	                         transform: rotate(20deg); 
+	                         Прооти год. стрілці 
+	                         transform: rotate(-20deg);
+	                         transform: rotateX(60deg);
+	                         transform: rotateY(60deg);
+                        </p>
+                    </div>
+                </div>
+
+                <div class="transform-2d__block block-elements">
+                    <div class="block-elements__box example-block">
+                        <div class="example-block__box example-block__box--skew"></div>
+                    </div>
+                    <div class="block-elements__info info-contant">
+                        <h2 class="info-contant__title">Skew (x + deg, y + deg)</h2>
+                        <p class="info-contant__description">
+                            Деформує (нахиляє) елементи.
+                        </p>
+                        <p class="info-contant__description">
+                             transform: skew(10deg, 10deg); 
+	                         transform: skewX(10deg); 
+	                         transform: skewY(10deg); 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="transform-2d__block block-elements">
+                    <div class="block-elements__box example-block">
+                        <div class="example-block__box example-block__box--matrix"></div>
+                    </div>
+                    <div class="block-elements__info info-contant">
+                        <h2 class="info-contant__title">Matrix (a, c, b, d, x, y)</h2>
+                        <p class="info-contant__description">
+                            Дозволяє об'єднати кілька функцій 2D-трансформацій в одній.
+                        </p>
+                        <p class="info-contant__description">
+                            Множинні 2D трансформації 
+                            значення розділяються пробілом
+                        </p>
+                        <p class="info-contant__description">
+                            transform: translate(20px, 20px) scale(0.5) rotate(-45deg) skew(-30deg); 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="transform-2d__block block-elements">
+                    <div class="block-elements__box example-block">
+                        <div class="example-block__box example-block__box--origin"></div>
+                    </div>
+                    <div class="block-elements__info info-contant">
+                        <h2 class="info-contant__title">Transform-origin</h2>
+                        <p class="info-contant__description">
+                            Дозволяє змістити центр трансформації,
+                            щодо якого відбувається зміна 
+                            положення/розміру/форми елемента.
+                            За замовченням:
+                        </p>
+                        <p class="info-contant__description">
+                            transform-origin: 50% 50%;
+                            transform-origin: 50%;
+                            transform-origin: center;
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+                <section class="transform-3d" id="part2">
+                    <div class="transform-3d__title title-section">
+                        <h2 class="title-section__title">
+                            <a class="title-section__link title-section__link--background-green" href="#part2">Transform 3D</a>
+                        </h2>
+                    </div>
+    
+                    <div class="transform-3d__block block-elements">
+                        <div class="block-elements__box example-block example-block--perspective">
+                            <div class="example-block__box example-block__box--rotate-3d"></div>
+                        </div>
+                        <div class="block-elements__info info-contant">
+                            <h2 class="info-contant__title">Perspective,
+                                perspective-origin</h2>
+                            <p class="info-contant__description">
+                                Встановлення глибини та зміна 
+                                точки початку координат.
+                                !! Задаються батьківському елементу!
+                                perspective-origin: center (за замовченням)
+                                perspective - не можна вказати у відсотках
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="transform-3d__block block-elements">
+                        <div class="block-elements__box example-block--perspective">
+                            <div class="example-block__box example-block__box--translate-3d"></div>
+                        </div>
+                        <div class="block-elements__info info-contant">
+                            <h2 class="info-contant__title">translate3D,
+                            </h2>
+                            <p class="info-contant__description">
+                                За аналогією зі своїм 2D братом,
+                                це значення визначає переміщення елемента,
+                                але в 3D-просторі. Крім осі X та Y 
+                                додається вісь Z.
+                                !! вісь Z працює лише з перспективою (perspective)
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="transform-3d__block block-elements">
+                        <div class="block-elements__box example-block--perspective">
+                            <div class="example-block__box example-block__box--scale-3d"></div>
+                        </div>
+                        <div class="block-elements__info info-contant">
+                            <h2 class="info-contant__title">Scale3D,
+                            </h2>
+                            <p class="info-contant__description">
+                                масштабує елемент у 3D-просторі, тобто змінює його розміри по трьох осях
+                            </p>
+                        </div>
+                    </div>
+            
+    
+                    <div class="transform-3d__block block-elements">
+                        <div class="block-elements__box example-block--perspective">
+                            <div class="example-block__box example-block__box--rotate-3d02"></div>
+                        </div>
+                        <div class="block-elements__info info-contant">
+                            <h2 class="info-contant__title"> Rotate3D (x,y,z,n+deg)
+                            </h2>
+                            <p class="info-contant__description">
+                           
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="transform-3d__block block-elements">
+                        <div class="block-elements__box example-block--perspective">
+                            <div class="example-block__box example-block__box--multi3d"></div>
+                        </div>
+                        <div class="block-elements__info info-contant">
+                            <h2 class="info-contant__title"> Multi3D
+                            </h2>
+                            <p class="info-contant__description">
+                                Можна задати декілька параметрів 3D пробіл.
+                            </p>
+                            <p class="info-contant__description">
+                                transform: translate3d(20px, 20px, 40px) rotate3d(1, 1, 1, 20deg);
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="transform-3d__block block-elements">
+                        <div class="block-elements__box example-block--perspective example-block--transform-style">
+                            <div class="example-block__box example-block__box--transform-style-expl"></div>
+                        </div>
+                        <div class="block-elements__info info-contant">
+                            <h2 class="info-contant__title"> Transform-style
+                            </h2>
+                            <p class="info-contant__description">
+                                Визначає, як дочірні елементи мають відображатися у 3D-просторі.
+                                !!! Задається батьківському елементу разом з perspective!
+                                transform-style: flat; - за замовченням
+                            </p>
+                            <p class="info-contant__description">
+                                transform-style: preserve-3d;<br>
+                                transform: rotateX(45deg); <br>
+                                transform: rotateY(45deg);
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="transform-3d__block block-elements">
+                        <div class="block-elements__box example-block--perspective example-block--transform-style">
+                            <div class="example-block__box example-block__box--backface-visibility">Lorem ipsum dolor, sit amet </div>
+                        </div>
+                        <div class="block-elements__info info-contant">
+                            <h2 class="info-contant__title"> Backface-visibility
+                            </h2>
+                            <p class="info-contant__description">
+                                Відображення зворотного боку об'єкта.
+                            </p>
+                            <p class="info-contant__description">
+                                backface-visibility: visible; за замовченням
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="container-card" id="part3">
+                    <h2 class="container-card__title">
+                        <a class="container-card__link" href="#part3">Part 3</a>
+                    </h2>
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="card__back">
+                                <img src="img/back.jpg" alt="image">
+                            </div>
+                            <div class="card__front">
+                                <img src="img/front.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+            <section class="car-container" id="car">
+                <div class="car__title title-section">
+                    <h2 class="title-section__title">
+                        <a class="title-section__link" href="#part1">Car</a>
+                    </h2>
+                </div>
+                <div class="car">
+                    <div class="windshield-end"></div>
+                    <div class="wheel left"></div>
+                    <div class="roof-box">
+                        <div class="roof"></div>
+                    </div>
+                    <div class="dor-box left-box-dor">
+                        <div class="dor left-dor">
+                            <div class="glass"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bumper">
+                    <div class="wheel right"></div>
+                    <div class="bumper-top"></div>
+                    <div class="dor-box right-box-dor">
+                        <div class="dor right-dor">
+                            <div class="glass-rigt"></div>
+                        </div>
+                    </div>
+                    <div class="windshield"></div>
+                    <div class="hood"></div>
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer" id="down">
+            <div class="footer__container">
+                <p class="footer__author">Stronov Kirill</p>
+                <a class="footer__link" href="#top">to up</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
